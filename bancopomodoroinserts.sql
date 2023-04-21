@@ -1,10 +1,3 @@
-drop table usuario;
-drop table empresa;
-drop table telefone;
-drop table caminhao;
-drop table remessaTomates;
-drop table sensor;
-drop table dadosSensor;
 
 CREATE DATABASE sealSolutions;
 USE sealSolutions;
