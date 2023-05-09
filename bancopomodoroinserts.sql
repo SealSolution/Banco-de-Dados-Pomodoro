@@ -6,8 +6,6 @@ CREATE TABLE empresa (
 	idEmpresa INT PRIMARY KEY auto_increment,
     nomeEmpresa varchar(45),
     CNPJ CHAR (14) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    senha VARCHAR (100) NOT NULL,
     CEP INT,
 	endereço VARCHAR(45),
     bairro VARCHAR(45),
@@ -18,16 +16,16 @@ CREATE TABLE empresa (
 );
 
 insert into empresa values
-(null,'fazenda grind','11111111111111','fazenda.grin@gmail.com','6907@Fer','09789789','R. Ype','jardim Pinheiros','SP','Monte Sião','Proximo da casa do Sr.João','Fazenda Grind produzindo felicidade'),
-(null,'Jitterbiti Brasil','12345678901234','jitterbiti.brasil@gmail.com','b@r45678rt','09111111','R. esmeralda','jardim olinda','MG','Ouro Verde','Predio Branco no final da rua','Distribuidora de Frutos'),
-(null,'Pomar Rivier Tomates','22222222222222','pr.tomates@gmail.com','jjskfgg@12345','09212233','R. Francisco das Neves','jardim Pamonha','GO','São bento','prédio','Produtora de tomates'),
-(null,'Pomarola','33333333333333','pamarola@gmail.com','qwert09876','0999888','R. verrelho','jardim Jandira','SP','São Paulina','prédio comercial','Distribuidora'),
-(null,'Quero','44444444444444','quero@gmail.com','qwertpo4567','09456789','R. lins fins','jardim Crispin','SP','jardins','Fazenda quero tomate','a Quero quer esta aqui para oferecer o melhor'),
-(null,'FarmLand','55555555555555','farm.land@gmail.com','9500@Feoo','09789789','R.quintim','jardim Bom figliolio','SP','Santana de Vitoria','fazenda','Produtora de Tomates e Laranjas'),
-(null,'Red juicy','66666666666666','redjuicy@outlook.com','84458jdu3!!','05789133','Travessa com Jardim pomar','Jardim Pomar','SC','Sorocaba','Proximo ao centro','Distribuidora de frutos e vegetais'),
-(null,'TMM','77777777777777','TMM@outlook.com.br','E74Dkk492@','02478321','R Mel Maria','Rosana','SP','São paulo','Predio vermelho','Produtora de Tomates, Morangos e Maças'),
-(null,'Ver Monte','88888888888888','ver.monte@gmail.com','J38#kd@kdkLL','01389473','Estrada 29','Barra do mendez','BH','Seabra','Proxima a fazenda de vinhos','Produtora de tomates'),
-(null,'Tamos Aqui','99999999999999','Ta.aqui@outlook.com.br','747@@kdkieLRE','03294561','R. dos Senhores','Leme','PR','Pradaria do norte','Fica proximo a loja do Sr. Jose','Vendedora de tomates');
+(null,'fazenda grind','11111111111111','09789789','R. Ype','jardim Pinheiros','SP','Monte Sião','Proximo da casa do Sr.João','Fazenda Grind produzindo felicidade'),
+(null,'Jitterbiti Brasil','12345678901234','09111111','R. esmeralda','jardim olinda','MG','Ouro Verde','Predio Branco no final da rua','Distribuidora de Frutos'),
+(null,'Pomar Rivier Tomates','22222222222222','09212233','R. Francisco das Neves','jardim Pamonha','GO','São bento','prédio','Produtora de tomates'),
+(null,'Pomarola','33333333333333','0999888','R. verrelho','jardim Jandira','SP','São Paulina','prédio comercial','Distribuidora'),
+(null,'Quero','44444444444444','09456789','R. lins fins','jardim Crispin','SP','jardins','Fazenda quero tomate','a Quero quer esta aqui para oferecer o melhor'),
+(null,'FarmLand','55555555555555','09789789','R.quintim','jardim Bom figliolio','SP','Santana de Vitoria','fazenda','Produtora de Tomates e Laranjas'),
+(null,'Red juicy','66666666666666','05789133','Travessa com Jardim pomar','Jardim Pomar','SC','Sorocaba','Proximo ao centro','Distribuidora de frutos e vegetais'),
+(null,'TMM','77777777777777','02478321','R Mel Maria','Rosana','SP','São paulo','Predio vermelho','Produtora de Tomates, Morangos e Maças'),
+(null,'Ver Monte','88888888888888','01389473','Estrada 29','Barra do mendez','BH','Seabra','Proxima a fazenda de vinhos','Produtora de tomates'),
+(null,'Tamos Aqui','99999999999999','03294561','R. dos Senhores','Leme','PR','Pradaria do norte','Fica proximo a loja do Sr. Jose','Vendedora de tomates');
 
 
 CREATE TABLE usuario (
