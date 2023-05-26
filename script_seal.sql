@@ -11,8 +11,6 @@ nome varchar(45),
 cpf char(11),
 nivel_acesso varchar(45) constraint chkniel check (nivel_acesso in('médio','básico','total')));
 
-
-
 create table empresa(
 idempresa int primary key auto_increment,
 nome varchar(45),
@@ -25,16 +23,6 @@ cidade varchar(45),
 uf char(2),
 complemento varchar(45),
 descricao varchar(45));
-
-
-create table usuarioEmpresa (
-fkusuario int primary key,
-fkempresa int,
-constraint fkusuario foreign key (fkusuario) references usuario(idUsuario),
-constraint fkempresa foreign key (fkempresa) references empresa(idempresa)
-);
-
-
 
 create table caminhao (
 	
